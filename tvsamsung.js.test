@@ -1,0 +1,31 @@
+var moment = require('moment');
+moment.lang('fr');
+
+exports.action = function(data, callback, cfg, SARAH){
+
+  var config = cfg.modules.tvsamsung;
+  if (!config.tvip){
+    console.log("La configuration du plugin Samsung TV est introuvable");
+    return;
+  }
+
+var chr function (asciiNum)
+{
+	return String.fromCharCode (asciiNum);
+}
+
+  var tvappstring = "iphone.UE55C8000.iapp.samsung"
+  var appstring = "iphone..iapp.samsung";
+    
+    var ipencoded  = new Buffer(config.tvip).toString('base64');
+    var macencoded = new Buffer("dc-71-44-2a-76-4f").toString('base64'); // 00-0c-29-3e-b1-4f
+    var remotename = new Buffer("Python Samsung Remote").toString('base64');
+	var appstringenc = new Buffer("iphone..iapp.samsung").toString('base64');
+                  
+    var footPart2 = String.fromCharCode(appstringenc)
+	var toto = chr(0x64)
+
+	console.log('RESULTAT : ' + toto);
+  
+  callback({'tts': "Paramètres invalides"});
+}

@@ -1,0 +1,15 @@
+﻿<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleSamsung" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+
+	<rule id="ruleSamsung" scope="public">
+		<tag>out.action=new Object(); </tag>
+		<item >Sarah</item>
+		
+		<one-of>
+			<item>baisse le son de la télé  <tag>out.action.key="KEY_VOLUP";</tag></item>
+			<item>monte le son de la télé   <tag>out.action.key="KEY_VOLUP";</tag></item>
+		</one-of>
+		
+		<tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/tvsamsung";</tag>
+	</rule>
+</grammar>
+ 

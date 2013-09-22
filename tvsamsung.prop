@@ -1,0 +1,9 @@
+{
+  "modules" : { 
+    "tvsamsung"  : {
+      "description": "Contrôle des TV Samsung",
+      "version"    : "1.0",
+      "tvip"       : "192.168.1.2"
+    }
+  }
+}
